@@ -1,6 +1,8 @@
 #### Bioinformatics 1 (INFR11160)
 ## School of Informatics, The University of Edinburgh (2023)
 
+![image](resources/bio1_header.png)
+
 Course Lecturer: Prof. Ian Simpson
 
 Contact: ([ian.simpson@ed.ac.uk](mailto:ian.simpson@ed.ac.uk))
