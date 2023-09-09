@@ -1,5 +1,9 @@
-#### bioinformatics1 (INFR11160)
-## Code for the Bioinformatics 1 Course - School of Informatics, The University of Edinburgh (2023)
+#### Bioinformatics 1 (INFR11160)
+## School of Informatics, The University of Edinburgh (2023)
+
+Course Lecturer: Prof. Ian Simpson
+
+Contact: ([ian.simpson@ed.ac.uk](mailto:ian.simpson@ed.ac.uk))
 
 - [Course Website](https://opencourse.inf.ed.ac.uk/bio1/)
 - [GitHub Cloning Link](https://github.com/tisimpson/bioinformatics1.git)
