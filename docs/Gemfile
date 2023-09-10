@@ -17,7 +17,7 @@ gem "minitest"
 gem "activesupport"
 gem "addressable"
 gem "commonmarker"
-gem "faraday"
+gem "faraday-retry"
 gem "rexml"
 gem "nokogiri"
 
