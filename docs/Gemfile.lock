@@ -253,11 +253,18 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
+  activesupport
+  addressable
+  commonmarker
+  faraday
   github-pages
   http_parser.rb
   jekyll-feed
   kramdown-parser-gfm
   minima
+  minitest
+  nokogiri
+  rexml
   tzinfo
   tzinfo-data
   wdm
