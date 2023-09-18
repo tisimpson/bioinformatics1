@@ -4,6 +4,7 @@
 ![image](resources/bio1_header.png)
 
 Course Lecturer: Prof. Ian Simpson
+
 Course Tutor: Barry Ryan
 
 Contact: ([ian.simpson@ed.ac.uk](mailto:ian.simpson@ed.ac.uk))
