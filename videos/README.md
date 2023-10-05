@@ -7,3 +7,4 @@
 ### Lectures
 - Lecture 1 - Introduction to Bioinformatics - [video](https://youtu.be/eDrC0fIhVLI)
 - Lecture 2 - Pairwise Sequence Alignment - [video](https://youtu.be/Tn9IsYOz3ws)
+- Lecture 3 - BLAST Basic Local Alignment Search Tool - [video](https://youtu.be/euT19RKtm8o)
