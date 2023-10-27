@@ -1,0 +1,402 @@
+ENTRY       hsa04514                    Pathway
+NAME        Cell adhesion molecules - Homo sapiens (human)
+DESCRIPTION Cell adhesion molecules (CAMs) are (glyco)proteins expressed on the cell surface and play a critical role in a wide array of biologic processes that include hemostasis, the immune response, inflammation, embryogenesis, and development of neuronal tissue. There are four main groups: the integrin family, the immunoglobulin superfamily, selectins, and cadherins. Membrane proteins that mediate immune cell&#8211;cell interactions fall into different categories, namely those involved in antigen recognition, costimulation and cellular adhesion. Furthermore cell-cell adhesions are important for brain morphology and highly coordinated brain functions such as memory and learning. During early development of the nervous system, neurons elongate their axons towards their targets and establish and maintain synapses through formation of cell-cell adhesions. Cell-cell adhesions also underpin axon-axon contacts and link neurons with supporting schwann cells and oligodendrocytes.
+CLASS       Environmental Information Processing; Signaling molecules and interaction
+PATHWAY_MAP hsa04514  Cell adhesion molecules
+DRUG        D02800  Alefacept (USAN/INN)
+            D02811  Alicaforsen sodium (USAN)
+            D02967  Apolizumab (USAN/INN)
+            D03066  Bectumomab (USAN/INN)
+            D03114  Bimosiamose disodium (USAN)
+            D03203  Abatacept (USAN/INN)
+            D03222  Belatacept (USAN/INN)
+            D03420  Cedelizumab (USAN/INN)
+            D03497  Cilengitide (USAN/INN)
+            D03959  Efalizumab (USAN/INN)
+            D04000  Enlimomab (USAN/INN)
+            D04036  Epratuzumab (USAN/INN)
+            D04045  Erlizumab (USAN/INN)
+            D04295  Galiximab (USAN/INN)
+            D05610  Priliximab (USAN/INN)
+            D05777  Ruplizumab (USAN/INN)
+            D05847  Siplizumab (USAN/INN)
+            D06071  Teneliximab (USAN/INN)
+            D06194  Torapsel (USAN/INN)
+            D06348  Yttrium Y 90 epratuzumab (USAN)
+            D06349  Yttrium Y 90 epratuzumab tetraxetan (USAN)
+            D06356  Zanolimumab (USAN/INN)
+            D06570  Camobucol (USAN/INN)
+            D06582  Elsibucol (USAN/INN)
+            D06590  Firategrast (USAN)
+            D06648  Succinobucol (USAN)
+            D06657  Tremelimumab (USAN/INN)
+            D08083  Vedolizumab (USAN)
+            D08933  Inotuzumab ozogamicin (USAN/INN)
+            D09575  Ibalizumab (USAN/INN)
+            D09631  Intetumumab (USAN/INN)
+            D09799  Carotegrast methyl (JAN)
+            D09927  Lorvotuzumab mertansine (USAN/INN)
+            D09929  Maraciclatide (USAN/INN)
+            D09932  Moxetumomab pasudotox (USAN/INN)
+            D10028  Valategrast hydrochloride (USAN)
+            D10316  Nivolumab (USAN/INN)
+            D10374  Lifitegrast (USAN/INN)
+            D10390  Pidilizumab (USAN/INN)
+            D10392  Lifitegrast sodium (USAN)
+            D10574  Pembrolizumab (USAN)
+            D10773  Atezolizumab (USAN/INN)
+            D10808  Durvalumab (USAN/INN)
+            D10817  Avelumab (USAN/INN)
+            D11108  Cemiplimab (USAN)
+            D11310  Uproleselan sodium (USAN)
+            D11332  Uproleselan (USAN/INN)
+            D11357  Bleselumab (USAN/INN)
+            D11366  Dostarlimab (USAN)
+            D11433  Vopratelimab (USAN/INN)
+            D11480  Crizanlizumab (USAN/INN)
+            D11482  Tiragolumab (USAN/INN)
+            D11487  Tislelizumab (USAN/INN)
+            D11488  Cetrelimab (USAN/INN)
+            D11491  Selicrelumab (USAN/INN)
+            D11515  Omburtamab (USAN/INN)
+            D11527  Zolbetuximab (USAN/INN)
+            D11532  Lodapolimab (USAN)
+            D11593  Etigilimab (USAN/INN)
+            D11597  Ravagalimab (USAN/INN)
+            D11605  Spartalizumab (USAN/INN)
+            D11610  Iscalimab (USAN/INN)
+            D11747  Inbakicept (USAN/INN)
+            D11752  Enoblituzumab (USAN/INN)
+            D11795  Vibostolimab (USAN/INN)
+            D11820  Balstilimab (USAN/INN)
+            D11827  Retifanlimab (USAN)
+            D11893  Bintrafusp alfa (USAN/INN)
+            D11907  Rozibafusp alfa (USAN/INN)
+            D11919  Fuzapladib sodium hydrate (JAN)
+            D11930  Betibeglogene autotemcel (USAN/INN)
+            D11946  Cosibelimab (USAN/INN)
+            D11948  Pacmilimab (USAN/INN)
+            D11959  Praluzatamab (USAN/INN)
+            D11996  Feladilimab (USAN/INN)
+            D12063  Zimberelimab (USAN)
+            D12119  Sintilimab (USAN/INN)
+            D12143  Pimivalimab (USAN)
+            D12154  Mirzotamab (USAN/INN)
+            D12178  Sotigalimab (USAN)
+            D12186  Vudalimab (USAN)
+            D12190  Cadonilimab (USAN/INN)
+            D12195  Izuralimab (USAN)
+            D12198  Penpulimab (USAN)
+            D12202  Toripalimab (USAN/INN)
+            D12223  Rosnilimab (USAN)
+            D12231  Peresolimab (USAN)
+            D12233  Quavonlimab (USAN/INN)
+            D12283  Ociperlimab (USAN/INN)
+            D12300  Acazicolcept (USAN/INN)
+            D12317  Bavunalimab (USAN/INN)
+            D12332  Zeluvalimab (USAN/INN)
+            D12344  Socazolimab (USAN)
+            D12347  Volrustomig (USAN)
+            D12348  Belrestotug (USAN)
+            D12349  Danburstotug (USAN)
+            D12367  Domvanalimab (USAN/INN)
+            D12426  Itolizumab (USAN/INN)
+            D12448  Botensilimab (USAN/INN)
+            D12463  Davoceticept (USAN/INN)
+            D12517  Vobramitamab (USAN/INN)
+            D12518  Voramitamab duocarmazine (USAN/INN)
+            D12592  Omidubicel (USAN)
+            D12620  Frexalimab (USAN/INN)
+            D12722  Bexotegrast (USAN/INN)
+DBLINKS     GO: 0050839
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        965  CD58; CD58 molecule [KO:K06492]
+            914  CD2; CD2 molecule [KO:K06449]
+            64115  VSIR; V-set immunoregulatory receptor [KO:K23268]
+            152404  IGSF11; immunoglobulin superfamily member 11 [KO:K06791]
+            941  CD80; CD80 molecule [KO:K05412]
+            29126  CD274; CD274 molecule [KO:K06745]
+            940  CD28; CD28 molecule [KO:K06470]
+            942  CD86; CD86 molecule [KO:K05413]
+            1493  CTLA4; cytotoxic T-lymphocyte associated protein 4 [KO:K06538]
+            23308  ICOSLG; inducible T cell costimulator ligand [KO:K06710]
+            102723996  ICOS ligand [KO:K06710]
+            29851  ICOS; inducible T cell costimulator [KO:K06713]
+            3108  HLA-DMA; major histocompatibility complex, class II, DM alpha [KO:K06752]
+            3109  HLA-DMB; major histocompatibility complex, class II, DM beta [KO:K06752]
+            3111  HLA-DOA; major histocompatibility complex, class II, DO alpha [KO:K06752]
+            3112  HLA-DOB; major histocompatibility complex, class II, DO beta [KO:K06752]
+            3113  HLA-DPA1; major histocompatibility complex, class II, DP alpha 1 [KO:K06752]
+            3115  HLA-DPB1; major histocompatibility complex, class II, DP beta 1 [KO:K06752]
+            3117  HLA-DQA1; major histocompatibility complex, class II, DQ alpha 1 [KO:K06752]
+            3118  HLA-DQA2; major histocompatibility complex, class II, DQ alpha 2 [KO:K06752]
+            3119  HLA-DQB1; major histocompatibility complex, class II, DQ beta 1 [KO:K06752]
+            3122  HLA-DRA; major histocompatibility complex, class II, DR alpha [KO:K06752]
+            3123  HLA-DRB1; major histocompatibility complex, class II, DR beta 1 [KO:K06752]
+            3125  HLA-DRB3; major histocompatibility complex, class II, DR beta 3 [KO:K06752]
+            3126  HLA-DRB4; major histocompatibility complex, class II, DR beta 4 [KO:K06752]
+            3127  HLA-DRB5; major histocompatibility complex, class II, DR beta 5 [KO:K06752]
+            920  CD4; CD4 molecule [KO:K06454]
+            3105  HLA-A; major histocompatibility complex, class I, A [KO:K06751]
+            3106  HLA-B; major histocompatibility complex, class I, B [KO:K06751]
+            3107  HLA-C; major histocompatibility complex, class I, C [KO:K06751]
+            3134  HLA-F; major histocompatibility complex, class I, F [KO:K06751]
+            3135  HLA-G; major histocompatibility complex, class I, G [KO:K06751]
+            3133  HLA-E; major histocompatibility complex, class I, E [KO:K06751]
+            925  CD8A; CD8 subunit alpha [KO:K06458]
+            926  CD8B; CD8 subunit beta [KO:K06459]
+            927  CD8B2; CD8B family member 2 [KO:K06459]
+            80380  PDCD1LG2; programmed cell death 1 ligand 2 [KO:K06708]
+            80381  CD276; CD276 molecule [KO:K06746]
+            79679  VTCN1; V-set domain containing T cell activation inhibitor 1 [KO:K06747]
+            5133  PDCD1; programmed cell death 1 [KO:K06744]
+            958  CD40; CD40 molecule [KO:K03160]
+            959  CD40LG; CD40 ligand [KO:K03161]
+            214  ALCAM; activated leukocyte cell adhesion molecule [KO:K06547]
+            923  CD6; CD6 molecule [KO:K06456]
+            5817  PVR; PVR cell adhesion molecule [KO:K06539]
+            10666  CD226; CD226 molecule [KO:K06567]
+            5819  NECTIN2; nectin cell adhesion molecule 2 [KO:K06531]
+            201633  TIGIT; T cell immunoreceptor with Ig and ITIM domains [KO:K16350]
+            3683  ITGAL; integrin subunit alpha L [KO:K05718]
+            3689  ITGB2; integrin subunit beta 2 [KO:K06464]
+            3383  ICAM1; intercellular adhesion molecule 1 [KO:K06490]
+            3384  ICAM2; intercellular adhesion molecule 2 [KO:K06523]
+            3385  ICAM3; intercellular adhesion molecule 3 [KO:K06486]
+            933  CD22; CD22 molecule [KO:K06467]
+            5788  PTPRC; protein tyrosine phosphatase receptor type C [KO:K06478] [EC:3.1.3.48]
+            6614  SIGLEC1; sialic acid binding Ig like lectin 1 [KO:K06548]
+            6693  SPN; sialophorin [KO:K06477]
+            25945  NECTIN3; nectin cell adhesion molecule 3 [KO:K06592]
+            1364  CLDN4; claudin 4 [KO:K06087]
+            1365  CLDN3; claudin 3 [KO:K06087]
+            1366  CLDN7; claudin 7 [KO:K06087]
+            149461  CLDN19; claudin 19 [KO:K06087]
+            10686  CLDN16; claudin 16 [KO:K06087]
+            23562  CLDN14; claudin 14 [KO:K06087]
+            24146  CLDN15; claudin 15 [KO:K06087]
+            26285  CLDN17; claudin 17 [KO:K06087]
+            49861  CLDN20; claudin 20 [KO:K06087]
+            5010  CLDN11; claudin 11 [KO:K06087]
+            51208  CLDN18; claudin 18 [KO:K06087]
+            53842  CLDN22; claudin 22 [KO:K06087]
+            7122  CLDN5; claudin 5 [KO:K06087]
+            9071  CLDN10; claudin 10 [KO:K06087]
+            9073  CLDN8; claudin 8 [KO:K06087]
+            9074  CLDN6; claudin 6 [KO:K06087]
+            9075  CLDN2; claudin 2 [KO:K06087]
+            9076  CLDN1; claudin 1 [KO:K06087]
+            9080  CLDN9; claudin 9 [KO:K06087]
+            137075  CLDN23; claudin 23 [KO:K06087]
+            100288814  CLDN34; claudin 34 [KO:K06087]
+            644672  CLDN25; claudin 25 [KO:K06087]
+            100132463  CLDN24; claudin 24 [KO:K06087]
+            9069  CLDN12; claudin 12 [KO:K06087]
+            100506658  OCLN; occludin [KO:K06088]
+            50848  F11R; F11 receptor [KO:K06089]
+            58494  JAM2; junctional adhesion molecule 2 [KO:K06735]
+            83700  JAM3; junctional adhesion molecule 3 [KO:K06785]
+            90952  ESAM; endothelial cell adhesion molecule [KO:K06787]
+            1003  CDH5; cadherin 5 [KO:K06533]
+            5175  PECAM1; platelet and endothelial cell adhesion molecule 1 [KO:K06471]
+            4267  CD99; CD99 molecule (Xg blood group) [KO:K06520]
+            83692  CD99L2; CD99 molecule like 2 [KO:K06520]
+            3684  ITGAM; integrin subunit alpha M [KO:K06461]
+            6404  SELPLG; selectin P ligand [KO:K06544]
+            6403  SELP; selectin P [KO:K06496]
+            3676  ITGA4; integrin subunit alpha 4 [KO:K06483]
+            3688  ITGB1; integrin subunit beta 1 [KO:K05719]
+            3680  ITGA9; integrin subunit alpha 9 [KO:K06585]
+            7412  VCAM1; vascular cell adhesion molecule 1 [KO:K06527]
+            3695  ITGB7; integrin subunit beta 7 [KO:K06590]
+            8174  MADCAM1; mucosal vascular addressin cell adhesion molecule 1 [KO:K06779]
+            6402  SELL; selectin L [KO:K06495]
+            947  CD34; CD34 molecule [KO:K06474]
+            2734  GLG1; golgi glycoprotein 1 [KO:K06816]
+            6401  SELE; selectin E [KO:K06494]
+            5818  NECTIN1; nectin cell adhesion molecule 1 [KO:K06081]
+            1000  CDH2; cadherin 2 [KO:K06736]
+            4684  NCAM1; neural cell adhesion molecule 1 [KO:K06491]
+            4685  NCAM2; neural cell adhesion molecule 2 [KO:K06491]
+            3897  L1CAM; L1 cell adhesion molecule [KO:K06550]
+            23705  CADM1; cell adhesion molecule 1 [KO:K06781]
+            257194  NEGR1; neuronal growth regulator 1 [KO:K06775]
+            22854  NTNG1; netrin G1 [KO:K07522]
+            57689  LRRC4C; leucine rich repeat containing 4C [KO:K07523]
+            84628  NTNG2; netrin G2 [KO:K16359]
+            64101  LRRC4; leucine rich repeat containing 4 [KO:K16351]
+            5792  PTPRF; protein tyrosine phosphatase receptor type F [KO:K05695] [EC:3.1.3.48]
+            94030  LRRC4B; leucine rich repeat containing 4B [KO:K16360]
+            6382  SDC1; syndecan 1 [KO:K06257]
+            6383  SDC2; syndecan 2 [KO:K16336]
+            9672  SDC3; syndecan 3 [KO:K16337]
+            6385  SDC4; syndecan 4 [KO:K16338]
+            3685  ITGAV; integrin subunit alpha V [KO:K06487]
+            3696  ITGB8; integrin subunit beta 8 [KO:K06591]
+            8516  ITGA8; integrin subunit alpha 8 [KO:K06584]
+            9378  NRXN1; neurexin 1 [KO:K07377]
+            9379  NRXN2; neurexin 2 [KO:K07377]
+            9369  NRXN3; neurexin 3 [KO:K07377]
+            22871  NLGN1; neuroligin 1 [KO:K07378]
+            57555  NLGN2; neuroligin 2 [KO:K07378]
+            54413  NLGN3; neuroligin 3 [KO:K07378]
+            57502  NLGN4X; neuroligin 4 X-linked [KO:K07378]
+            22829  NLGN4Y; neuroligin 4 Y-linked [KO:K07378]
+            5802  PTPRS; protein tyrosine phosphatase receptor type S [KO:K06778] [EC:3.1.3.48]
+            114798  SLITRK1; SLIT and NTRK like family member 1 [KO:K25832]
+            84631  SLITRK2; SLIT and NTRK like family member 2 [KO:K25833]
+            139065  SLITRK4; SLIT and NTRK like family member 4 [KO:K25835]
+            26050  SLITRK5; SLIT and NTRK like family member 5 [KO:K25836]
+            84189  SLITRK6; SLIT and NTRK like family member 6 [KO:K25837]
+            5789  PTPRD; protein tyrosine phosphatase receptor type D [KO:K06777] [EC:3.1.3.48]
+            22865  SLITRK3; SLIT and NTRK like family member 3 [KO:K25834]
+            57863  CADM3; cell adhesion molecule 3 [KO:K06780]
+            4897  NRCAM; neuronal cell adhesion molecule [KO:K06756]
+            1272  CNTN1; contactin 1 [KO:K06759]
+            5797  PTPRM; protein tyrosine phosphatase receptor type M [KO:K05693] [EC:3.1.3.48]
+            6900  CNTN2; contactin 2 [KO:K06760]
+            23114  NFASC; neurofascin [KO:K06757]
+            8506  CNTNAP1; contactin associated protein 1 [KO:K07379]
+            26047  CNTNAP2; contactin associated protein 2 [KO:K07380]
+            4359  MPZ; myelin protein zero [KO:K06770]
+            9019  MPZL1; myelin protein zero like 1 [KO:K06770]
+            4099  MAG; myelin associated glycoprotein [KO:K06771]
+            999  CDH1; cadherin 1 [KO:K05689]
+            1462  VCAN; versican [KO:K06793]
+            3655  ITGA6; integrin subunit alpha 6 [KO:K06485]
+            1001  CDH3; cadherin 3 [KO:K06796]
+            1002  CDH4; cadherin 4 [KO:K06797]
+            1013  CDH15; cadherin 15 [KO:K06809]
+            4756  NEO1; neogenin 1 [KO:K06766]
+REFERENCE   PMID:14690046
+  AUTHORS   Barclay AN.
+  TITLE     Membrane proteins with immunoglobulin-like domains--a master superfamily of interaction molecules.
+  JOURNAL   Semin Immunol 15:215-23 (2003)
+            DOI:10.1016/S1044-5323(03)00047-2
+REFERENCE   PMID:11910893
+  AUTHORS   Sharpe AH, Freeman GJ.
+  TITLE     The B7-CD28 superfamily.
+  JOURNAL   Nat Rev Immunol 2:116-26 (2002)
+            DOI:10.1038/nri727
+REFERENCE   PMID:9597126
+  AUTHORS   Grewal IS, Flavell RA.
+  TITLE     CD40 and CD154 in cell-mediated immunity.
+  JOURNAL   Annu Rev Immunol 16:111-35 (1998)
+            DOI:10.1146/annurev.immunol.16.1.111
+REFERENCE   PMID:16034094
+  AUTHORS   Dardalhon V, Schubart AS, Reddy J, Meyers JH, Monney L, Sabatos CA, Ahuja R, Nguyen K, Freeman GJ, Greenfield EA, Sobel RA, Kuchroo VK.
+  TITLE     CD226 is specifically expressed on the surface of Th1 cells and regulates their expansion and effector functions.
+  JOURNAL   J Immunol 175:1558-65 (2005)
+            DOI:10.4049/jimmunol.175.3.1558
+REFERENCE   PMID:12234363
+  AUTHORS   Montoya MC, Sancho D, Vicente-Manzanares M, Sanchez-Madrid F.
+  TITLE     Cell adhesion and polarity during immune interactions.
+  JOURNAL   Immunol Rev 186:68-82 (2002)
+            DOI:10.1034/j.1600-065X.2002.18607.x
+REFERENCE   PMID:15071551
+  AUTHORS   Dejana E.
+  TITLE     Endothelial cell-cell junctions: happy together.
+  JOURNAL   Nat Rev Mol Cell Biol 5:261-70 (2004)
+            DOI:10.1038/nrm1357
+REFERENCE   PMID:14519386
+  AUTHORS   Bazzoni G.
+  TITLE     The JAM family of junctional adhesion molecules.
+  JOURNAL   Curr Opin Cell Biol 15:525-30 (2003)
+            DOI:10.1016/S0955-0674(03)00104-2
+REFERENCE   PMID:10798271
+  AUTHORS   Becker BF, Heindl B, Kupatt C, Zahler S.
+  TITLE     Endothelial function and hemostasis.
+  JOURNAL   Z Kardiol 89:160-7 (2000)
+            DOI:10.1007/PL00007320
+REFERENCE   PMID:9150551
+  AUTHORS   Elangbam CS, Qualls CW Jr, Dahlgren RR.
+  TITLE     Cell adhesion molecules--update.
+  JOURNAL   Vet Pathol 34:61-73 (1997)
+            DOI:10.1177/030098589703400113
+REFERENCE   PMID:12810109
+  AUTHORS   Muller WA.
+  TITLE     Leukocyte-endothelial-cell interactions in leukocyte transmigration and the inflammatory response.
+  JOURNAL   Trends Immunol 24:327-34 (2003)
+            DOI:10.1016/S1471-4906(03)00117-0
+REFERENCE   PMID:14519398
+  AUTHORS   Yamagata M, Sanes JR, Weiner JA.
+  TITLE     Synaptic adhesion molecules.
+  JOURNAL   Curr Opin Cell Biol 15:621-32 (2003)
+            DOI:10.1016/S0955-0674(03)00107-8
+REFERENCE   PMID:15882774
+  AUTHORS   Ethell IM, Pasquale EB.
+  TITLE     Molecular mechanisms of dendritic spine development and remodeling.
+  JOURNAL   Prog Neurobiol 75:161-205 (2005)
+            DOI:10.1016/j.pneurobio.2005.02.003
+REFERENCE   PMID:11050419
+  AUTHORS   Benson DL, Schnapp LM, Shapiro L, Huntley GW.
+  TITLE     Making memories stick: cell-adhesion molecules in synaptic plasticity.
+  JOURNAL   Trends Cell Biol 10:473-82 (2000)
+            DOI:10.1016/S0962-8924(00)01838-9
+REFERENCE   PMID:11860281
+  AUTHORS   Rosdahl JA, Mourton TL, Brady-Kalnay SM.
+  TITLE     Protein kinase C delta (PKCdelta) is required for protein tyrosine phosphatase mu (PTPmu)-dependent neurite outgrowth.
+  JOURNAL   Mol Cell Neurosci 19:292-306 (2002)
+            DOI:10.1006/mcne.2001.1071
+REFERENCE   PMID:10964748
+  AUTHORS   Dunican DJ, Doherty P.
+  TITLE     The generation of localized calcium rises mediated by cell adhesion molecules and their role in neuronal growth cone motility.
+  JOURNAL   Mol Cell Biol Res Commun 3:255-63 (2000)
+            DOI:10.1006/mcbr.2000.0225
+REFERENCE   PMID:12367625
+  AUTHORS   Girault JA, Peles E.
+  TITLE     Development of nodes of Ranvier.
+  JOURNAL   Curr Opin Neurobiol 12:476-85 (2002)
+            DOI:10.1016/S0959-4388(02)00370-7
+REFERENCE   PMID:10664064
+  AUTHORS   Arroyo EJ, Scherer SS.
+  TITLE     On the molecular architecture of myelinated fibers.
+  JOURNAL   Histochem Cell Biol 113:1-18 (2000)
+            DOI:10.1007/s004180050001
+REFERENCE   PMID:14556710
+  AUTHORS   Salzer JL.
+  TITLE     Polarized domains of myelinated axons.
+  JOURNAL   Neuron 40:297-318 (2003)
+            DOI:10.1016/S0896-6273(03)00628-7
+REFERENCE   PMID:15561584
+  AUTHORS   Irie K, Shimizu K, Sakisaka T, Ikeda W, Takai Y.
+  TITLE     Roles and modes of action of nectins in cell-cell adhesion.
+  JOURNAL   Semin Cell Dev Biol 15:643-56 (2004)
+            DOI:10.1016/j.semcdb.2004.09.002
+REFERENCE   PMID:15551862
+  AUTHORS   Nakanishi H, Takai Y.
+  TITLE     Roles of nectins in cell adhesion, migration and polarization.
+  JOURNAL   Biol Chem 385:885-92 (2004)
+            DOI:10.1515/BC.2004.116
+REFERENCE   PMID:15115723
+  AUTHORS   Siu MK, Cheng CY.
+  TITLE     Extracellular matrix: recent advances on its role in junction dynamics in the seminiferous epithelium during spermatogenesis.
+  JOURNAL   Biol Reprod 71:375-91 (2004)
+            DOI:10.1095/biolreprod.104.028225
+REFERENCE   PMID:15056568
+  AUTHORS   Lee NP, Cheng CY.
+  TITLE     Adaptors, junction dynamics, and spermatogenesis.
+  JOURNAL   Biol Reprod 71:392-404 (2004)
+            DOI:10.1095/biolreprod.104.027268
+REFERENCE   PMID:15728677
+  AUTHORS   Inagaki M, Irie K, Ishizaki H, Tanaka-Okamoto M, Morimoto K, Inoue E, Ohtsuka T, Miyoshi J, Takai Y.
+  TITLE     Roles of cell-adhesion molecules nectin 1 and nectin 3 in ciliary body development.
+  JOURNAL   Development 132:1525-37 (2005)
+            DOI:10.1242/dev.01697
+REFERENCE   PMID:12500939
+  AUTHORS   Marthiens V, Gavard J, Lambert M, Mege RM.
+  TITLE     Cadherin-based cell adhesion in neuromuscular development.
+  JOURNAL   Biol Cell 94:315-26 (2002)
+            DOI:10.1016/S0248-4900(02)00005-9
+REFERENCE   PMID:15923648
+  AUTHORS   Krauss RS, Cole F, Gaio U, Takaesu G, Zhang W, Kang JS.
+  TITLE     Close encounters: regulation of vertebrate skeletal myogenesis by cell-cell contact.
+  JOURNAL   J Cell Sci 118:2355-62 (2005)
+            DOI:10.1242/jcs.02397
+REL_PATHWAY hsa04520  Adherens junction
+            hsa04530  Tight junction
+            hsa04610  Complement and coagulation cascades
+            hsa04660  T cell receptor signaling pathway
+            hsa04670  Leukocyte transendothelial migration
+KO_PATHWAY  ko04514
+///
