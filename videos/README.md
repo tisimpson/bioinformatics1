@@ -12,3 +12,4 @@
 - Lecture 5 - Exploring Biological Databases - [video](https://youtu.be/_9Uo_RkJEK4)
 - Lecture 6 - Working with Biological Databases - [video](https://youtu.be/hAMQJjkGnvM)
 - Lecture 7 - Ontologies & Functional Annotation Analysis - [video](https://youtu.be/c1Ft_G8PzYE)
+- Lecture 8 - Biological Network Analysis - [video](https://youtu.be/eRG07rLQVX4)
