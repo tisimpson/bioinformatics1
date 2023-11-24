@@ -1,5 +1,0 @@
-"0","myLabels <- paste(pData(data)$sample,pData(data)$condition,pData(data)$gfp,sep='_');
-boxplot(data,las=2,col=myGFPcol[pData(data)$gfp],ylab='Expression',names=myLabels);
-boxplot(data,las=2,col=myCondcol[pData(data)$condition],ylab='Expression',names=myLabels);
-"
-"0",""

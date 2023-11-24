@@ -1,5 +1,0 @@
-"0","# In addition to count data, we'll need to load a file containing metadata "
-"0","pasillaSamples <- read.csv(""pasilla_sample_data.tsv"", sep=""\t"", row.names=""sample"")"
-"0",""
-"0","# Examine the sample metadata"
-"0","pasillaSamples"

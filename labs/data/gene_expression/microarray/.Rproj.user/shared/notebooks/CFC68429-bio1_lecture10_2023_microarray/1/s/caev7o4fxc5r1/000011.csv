@@ -1,2 +1,0 @@
-"0","#plot by gfp status"
-"0","ggplot(pcs,aes(PC1,PC2,colour=gfp))+geom_point()+theme_bw()+scale_colour_manual(values=c('gray','green'));"
