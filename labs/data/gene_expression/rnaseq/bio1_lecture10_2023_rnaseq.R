@@ -1,0 +1,188 @@
+# Install the "DESeq2" package:
+# "DESeq2: Differential gene expression analysis based on the negative binomial 
+# distribution"
+# http://bioconductor.org/packages/release/bioc/html/DESeq2.html
+
+setRepositories(graphics = F,c(1,2,3,4,5))
+install.packages('DESeq2')
+setwd('./')
+
+# Load the DESeq2 library into R.
+library("DESeq2")
+
+
+#Get Gene Counts
+
+# Load "pasilla_gene_counts.tsv", which contains per-gene counts of mapped reads 
+# for each sample in the study:
+#  Brooks et al., "Conservation of an RNA regulatory map between Drosophila and 
+#  mammals", Genome Research (2011).
+# Note that if the "pasilla_gene_counts.tsv" file is in a different directory to
+# where you are running R, you'll need to specify the relative path to the file
+# within the following statement.
+pasillaCounts <- read.csv("pasilla_gene_counts.tsv", sep="\t", row.names="gene_id")
+pasillaCounts <- as.matrix(pasillaCounts)
+
+# Examine the per-gene read counts.
+head(pasillaCounts)
+
+
+# ### Part 3 - Get Sample Meta-Data
+
+# In addition to count data, we'll need to load a file containing metadata 
+# describing the experimental samples
+pasillaSamples <- read.csv("pasilla_sample_data.tsv", sep="\t", row.names="sample")
+
+# Examine the sample metadata
+pasillaSamples
+
+
+# ### Part 4 - Get Paired-End Data
+
+# Construct a vector of "TRUE" or "FALSE" values according as each sample is from 
+# a single- or paired-end library.
+pairedSamples <- pasillaSamples$type == "paired-end"
+
+# Then use that vector to extract just the counts for the paired-end samples, and 
+# reassign this data to the "pasillaCounts" variable.
+pasillaCounts <- pasillaCounts[ , pairedSamples ]
+
+# Now the counts table only contains per-gene read counts for the paired-end 
+# samples.
+head(pasillaCounts)
+
+# We'll do the same for the sample metadata (n.b. here we're selecting rows; 
+# for the counts we were selecting columns)
+pasillaSamples <- pasillaSamples[ pairedSamples, ]
+
+
+# ### Part 5 - Re-order Conditions
+
+# As it stands, the experimental conditions are ordered the wrong way round because 
+# DESeq2 chooses the base condition by alphabetical order (this just means that fold 
+# changes for gene expression won't be the way round that we'd naturally expect, that 
+# is, "treated" vs "untreated").
+pasillaSamples$condition
+
+# But we can easily reorder so that "untreated" is the base condition - and DESeq2 
+# will then report differential expression in the "treated" condition relative 
+# to this.
+pasillaSamples$condition <- relevel(pasillaSamples$condition, ref="untreated")
+
+# Now the conditions are the right way round.
+pasillaSamples$condition
+
+
+# ### Part 6 - Create DESeq Data Set
+# We can now create a "DESeqDataSet" object, encapsulating all the information
+# we need to perform a differential expression analysis. Note that we also supply
+# a design formula, expressing in what way we expect the counts for each gene to
+# depend on the variables in "pasillaSamples". In this simple example, we just
+# expect the counts to depend on whether the samples were untreated or treated 
+# (i.e. on the "condition" variable)
+
+dds <- DESeqDataSetFromMatrix(
+  countData=pasillaCounts, colData=pasillaSamples, design=~condition)
+
+# Examining this object gives some summary information on the samples and 
+# number of genes.
+dds
+
+# ### Part 7 - Normalise Count Data
+# Now we can finally start to analyse the data. At this point, we'd normally 
+# use the function "DESeq", which wraps all the standard differential expression 
+# analysis steps into a single call. However, here we'll execute some of the 
+# steps separately, so as to examine in a little more detail.
+
+# The first thing we have to do is normalise counts across the samples. Because 
+# different total numbers of reads may be produced in different sequencing runs 
+# (i.e. the samples are sequenced to different "depths" of read coverage), genes 
+# which are *not* differentially expressed may nevertheless have very different 
+# counts across samples. DESeq2 assumes that most genes are not differentially 
+# expressed (which is *usually* - but not always! - a sensible assumption), and 
+# then calculates a per-sample "size factor" to be applied to the counts of each 
+# sample (it divides each count by the size factor). This brings the counts for 
+# each sample onto a common scale so that comparisons can be made between them.
+# (n.b. there are many other ways in which sample counts could potentially be 
+# normalised, and this is still an active area of research.)
+dds <- estimateSizeFactors(dds)
+
+# DESeq has calculated, for example, that the counts in the "treated3" sample are 
+# considerably larger than all the other samples, and that those in the 
+# "untreated3" sample are considerably smaller.
+sizeFactors(dds)
+
+# We can see the difference the size factors make by examining raw... 
+head(counts(dds))
+
+# ...and normalised counts.
+head(counts(dds, normalized=TRUE))
+
+
+# ### Part 8 - Estimate Dispersion
+# DESeq2's statistical model relies on understanding the relationship between the
+# gene count data's variance and its mean. The next step estimates the relationship
+# between the mean normalised counts and their "dispersion" (that is, the squared 
+# coefficient of variation = the standard deviation divided by the mean, all 
+# squared). Dispersion can be understood as follows - if a gene's expression varies 
+# from replicate to replicate by 20%, its dispersion is 0.2*0.2=0.04.
+# The function estimateDispersions() performs three steps:
+#   (i) it estimates a dispersion value for each gene (which value may itself have 
+#   a large sampling variance due to the limited number of samples it is calculated 
+#   from),
+#   (ii) it fits a curve through these estimates,
+#   (iii) for each gene it "shrinks" the noisy gene-wise dispersion estimates towards 
+#   the consensus represented by the fitted curve (though outliers, with large 
+#   dispersion estimates, are left unchanged) 
+dds <- estimateDispersions(dds)
+
+# We can view the per-gene dispersion estimates and the fitted curve using the 
+# plotDispEsts() function. Black dots are the original gene-wise dispersion estimates, 
+# the red line is the fitted curve, and the blue dots are the final "shrunken" 
+# dispersion estimates. Black dots surrounded by blue circles are the outliers, 
+# whose dispersion estimate was not altered.
+plotDispEsts(dds)
+
+
+# ### Part 9 - Call Differentially Expressed Genes
+# We now have a dispersion estimate for each gene. DESeq2 is now in a position 
+# to perform tests, for each gene, using the negative binomial distribution to 
+# see if the counts in the two experimental conditions come from distributions 
+# with different means.
+res <- results(nbinomWaldTest(dds, betaPrior=TRUE))
+head(res)
+
+# Make a scatter plot of logarithmic fold changes (y-axis) versus the mean of 
+# normalised counts (x-axis). Differentially expressed genes are coloured red.
+plotMA(res, ylim=c(-2,2))
+
+
+# ### Part 10 - Examine Differentially Expressed Genes
+# We'll remove genes for which DESeq2 did not perform a full calculation. 
+# This includes, for example, genes with low mean counts that DESeq2 had 
+# determined were unlikely to be called as differentially expressed. These 
+# genes are indicated by a value of "NA" in the "padj" column.
+res <- res[ !is.na(res$padj), ]
+
+# Select genes called as differentially expressed with the False Discovery Rate 
+# controlled at 10% - that is, at most 10% of the genes called as differentially 
+# expressed will be false positives.
+resSig <- res[ res$padj < 0.1, ]
+
+# Order the significant genes by p-value - i.e. by their likelihood of being 
+# differentially expressed.
+head(resSig[ order(resSig$pvalue), ])
+
+# Examine the most strongly down-regulated of the significant genes.
+head(resSig[ order(resSig$log2FoldChange, -resSig$baseMean), ])
+
+# Examine the most strongly up-regulated of the significant genes.
+head(resSig[ order(-resSig$log2FoldChange, -resSig$baseMean), ])
+
+
+# ### Part 11 - What about Pasilla?
+# Select pasilla (which has FlyBase gene ID "FBgn0261552") from the results table. 
+# Is it differentially expressed (let's hope so!)?
+resSig["FBgn0261552", ]
+
+# Yes, its expression is down about 4-fold in the treated samples.

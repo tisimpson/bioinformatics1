@@ -1,0 +1,10 @@
+"0","#now lets normalise the data"
+"0","norm <- rma(data); # RMA - the Robust Multi-Chip Average - returns expression in log2"
+"1","Background correcting
+"
+"1","Normalizing
+"
+"1","Calculating Expression
+"
+"0","#and extract the expression matrix"
+"0","exprs <- exprs(norm);"

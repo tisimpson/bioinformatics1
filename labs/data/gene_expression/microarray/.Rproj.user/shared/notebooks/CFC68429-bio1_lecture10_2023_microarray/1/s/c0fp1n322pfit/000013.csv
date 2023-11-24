@@ -1,0 +1,3 @@
+"0",""
+"0","# show a raw image of an individual microarray chip (!)"
+"0","image(data[,1]);"
