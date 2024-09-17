@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "/Users/iansimpson/Library/R/x86_64/4.1/library",
+        "installDependencies": true
+    }
+}

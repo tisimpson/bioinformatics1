@@ -1,0 +1,117 @@
+"0","#Using  package to look for functional enrichment in gene lists"
+"0","library(topGO);"
+"0",""
+"0","geneList <- fit2$p.value[,1];"
+"0","names(geneList) <- as.factor(fit2$genes[,1]);"
+"0",""
+"0","names(geneList) <- as.factor(rownames(fit2));"
+"0",""
+"0","topDiffGenes <- function(x){"
+"0","  return(x<=0.01)"
+"0","}"
+"0",""
+"0","#now set up the Drosophila GO"
+"0","library(drosophila2.db);"
+"0",""
+"0","#create the GOData object that contains all of the gene association information for background and your own gene list"
+"0","sampleGOdata <- new(""topGOdata"",description = ""Simple session"", ontology = ""BP"",allGenes = geneList, geneSel = topDiffGenes,nodeSize = 10,  annot = annFUN.db, affyLib = ""drosophila2.db"")"
+"2","
+Building most specific GOs .....
+"
+"2","Warning: SQL statements must be issued with dbExecute() or dbSendStatement() instead of dbGetQuery() or dbSendQuery()."
+"2","	( 5056 GO terms found. )
+"
+"2","
+Build GO DAG topology ..........
+"
+"2","	( 7660 GO terms and 16601 relations. )
+"
+"2","
+Annotating nodes ...............
+"
+"2","	( 12435 genes annotated to the GO terms. )
+"
+"0","#perform a Fisher test to look for statistically significant enrichment of terms"
+"0","resultFisher <- runTest(sampleGOdata, algorithm = ""classic"", statistic = ""fisher"")"
+"2","
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 3318 nontrivial nodes
+		 parameters: 
+			 test statistic: fisher
+"
+"0","#use a Kolmogorov–Smirnov test instead"
+"0","resultKS <- runTest(sampleGOdata, algorithm = ""classic"", statistic = ""ks"")"
+"2","
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 3347 nontrivial nodes
+		 parameters: 
+			 test statistic: ks
+			 score order: increasing
+"
+"0","#apply KS test, with more conservative outcome 'elim'"
+"0","resultKS.elim <- runTest(sampleGOdata, algorithm = ""elim"", statistic = ""ks"")"
+"2","
+			 -- Elim Algorithm -- 
+
+		 the algorithm is scoring 3347 nontrivial nodes
+		 parameters: 
+			 test statistic: ks
+			 cutOff: 0.01
+			 score order: increasing
+"
+"2","
+	 Level 17:	3 nodes to be scored	(0 eliminated genes)
+"
+"2","
+	 Level 16:	8 nodes to be scored	(42 eliminated genes)
+"
+"2","
+	 Level 15:	20 nodes to be scored	(73 eliminated genes)
+"
+"2","
+	 Level 14:	34 nodes to be scored	(127 eliminated genes)
+"
+"2","
+	 Level 13:	60 nodes to be scored	(521 eliminated genes)
+"
+"2","
+	 Level 12:	123 nodes to be scored	(741 eliminated genes)
+"
+"2","
+	 Level 11:	215 nodes to be scored	(1468 eliminated genes)
+"
+"2","
+	 Level 10:	306 nodes to be scored	(2178 eliminated genes)
+"
+"2","
+	 Level 9:	451 nodes to be scored	(3324 eliminated genes)
+"
+"2","
+	 Level 8:	476 nodes to be scored	(4302 eliminated genes)
+"
+"2","
+	 Level 7:	538 nodes to be scored	(4970 eliminated genes)
+"
+"2","
+	 Level 6:	488 nodes to be scored	(5651 eliminated genes)
+"
+"2","
+	 Level 5:	335 nodes to be scored	(6464 eliminated genes)
+"
+"2","
+	 Level 4:	191 nodes to be scored	(7340 eliminated genes)
+"
+"2","
+	 Level 3:	81 nodes to be scored	(7792 eliminated genes)
+"
+"2","
+	 Level 2:	17 nodes to be scored	(8083 eliminated genes)
+"
+"2","
+	 Level 1:	1 nodes to be scored	(8092 eliminated genes)
+"
+"0","#display all the tests together"
+"0","allRes <- GenTable(sampleGOdata, classicFisher = resultFisher, classicKS = resultKS, elimKS = resultKS.elim, orderBy = ""elimKS"", ranksOf = ""classicFisher"", topNodes = 30)"
+"0","print(allRes)"

@@ -1,0 +1,1 @@
+"0","boxplot(data,las=2,col=myCondcol[pData(data)$condition],ylab='Expression',names=myLabels);"
